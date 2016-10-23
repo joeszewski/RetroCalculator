@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Minecrafter.Alt.ttf">
+            <string>MinecrafterAlt</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -24,12 +29,6 @@
                                     <constraint firstAttribute="height" constant="80" id="Qtk-la-yoj"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="MkI-A2-FbP">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="Oaq-ar-7df"/>
-                                    <constraint firstAttribute="width" constant="320" id="ow0-g4-iHH"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="oja-Mv-mop">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="329" id="aoX-B5-IXM"/>
@@ -38,7 +37,7 @@
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q9o-jx-ta5">
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Ccp-XW-O1H">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ccp-XW-O1H">
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whm-tt-RHH">
                                                 <constraints>
@@ -165,12 +164,17 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="MkI-A2-FbP">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="fb7-uF-WMq"/>
+                                    <constraint firstAttribute="width" constant="241" id="rEt-1F-x0n"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1s-4w-Kxk">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="241" id="EJI-gM-rmn"/>
-                                    <constraint firstAttribute="height" constant="21" id="WWX-M6-YyK"/>
+                                    <constraint firstAttribute="height" constant="45" id="WWX-M6-YyK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="MinecrafterAlt" family="Minecrafter Alt" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -179,19 +183,19 @@
                         <constraints>
                             <constraint firstItem="MkI-A2-FbP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1F1-pY-u51"/>
                             <constraint firstAttribute="trailing" secondItem="sZ5-MP-CG0" secondAttribute="trailing" id="37c-uB-isc"/>
+                            <constraint firstItem="a1s-4w-Kxk" firstAttribute="trailing" secondItem="MkI-A2-FbP" secondAttribute="trailing" constant="-15" id="3gq-Mn-orB"/>
                             <constraint firstItem="q9o-jx-ta5" firstAttribute="centerX" secondItem="oja-Mv-mop" secondAttribute="centerX" id="544-Np-8Gd"/>
-                            <constraint firstItem="a1s-4w-Kxk" firstAttribute="centerY" secondItem="MkI-A2-FbP" secondAttribute="centerY" id="7G0-13-j8f"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sZ5-MP-CG0" secondAttribute="bottom" id="8nh-0X-4So"/>
                             <constraint firstItem="q9o-jx-ta5" firstAttribute="centerY" secondItem="oja-Mv-mop" secondAttribute="centerY" id="CXZ-QY-jZw"/>
                             <constraint firstAttribute="trailing" secondItem="aLt-jN-SNh" secondAttribute="trailing" id="Hnr-zL-SBn"/>
-                            <constraint firstItem="a1s-4w-Kxk" firstAttribute="trailing" secondItem="MkI-A2-FbP" secondAttribute="trailing" constant="-15" id="Hyg-GF-LKW"/>
                             <constraint firstItem="oja-Mv-mop" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="35" id="IQl-s8-EhU"/>
                             <constraint firstItem="oja-Mv-mop" firstAttribute="top" secondItem="MkI-A2-FbP" secondAttribute="bottom" constant="15" id="KSC-Bs-h35"/>
                             <constraint firstItem="sZ5-MP-CG0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="O5D-Mu-gzh"/>
-                            <constraint firstItem="a1s-4w-Kxk" firstAttribute="leading" secondItem="MkI-A2-FbP" secondAttribute="leading" constant="15" id="Pqb-K5-Qy4"/>
+                            <constraint firstItem="a1s-4w-Kxk" firstAttribute="leading" secondItem="MkI-A2-FbP" secondAttribute="leading" constant="15" id="dfs-7E-M8b"/>
                             <constraint firstItem="sZ5-MP-CG0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eNM-Ur-SnQ"/>
                             <constraint firstItem="aLt-jN-SNh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f2i-HB-VMi"/>
                             <constraint firstItem="oja-Mv-mop" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="if7-We-xva"/>
+                            <constraint firstItem="a1s-4w-Kxk" firstAttribute="centerY" secondItem="MkI-A2-FbP" secondAttribute="centerY" constant="4" id="p1D-EE-UIa"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aLt-jN-SNh" secondAttribute="bottom" id="uDu-9U-aTa"/>
                         </constraints>
                     </view>
