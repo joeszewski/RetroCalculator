@@ -15,6 +15,7 @@
 		D871800E1DBC3F8100D37A0F /* RetroCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D871800D1DBC3F8100D37A0F /* RetroCalculatorTests.swift */; };
 		D87180191DBC3F8100D37A0F /* RetroCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87180181DBC3F8100D37A0F /* RetroCalculatorUITests.swift */; };
 		D8A15AB11DBD769E00E3E113 /* Minecrafter.Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8A15AB01DBD769E00E3E113 /* Minecrafter.Alt.ttf */; };
+		D8F4E2801DBEDE2E004E2692 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8F4E27F1DBEDE2E004E2692 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D87180181DBC3F8100D37A0F /* RetroCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroCalculatorUITests.swift; sourceTree = "<group>"; };
 		D871801A1DBC3F8100D37A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8A15AB01DBD769E00E3E113 /* Minecrafter.Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecrafter.Alt.ttf; sourceTree = "<group>"; };
+		D8F4E27F1DBEDE2E004E2692 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				D8A15AB01DBD769E00E3E113 /* Minecrafter.Alt.ttf */,
+				D8F4E27F1DBEDE2E004E2692 /* btn.wav */,
 				D8717FF81DBC3F8000D37A0F /* AppDelegate.swift */,
 				D8717FFA1DBC3F8000D37A0F /* ViewController.swift */,
 				D8717FFC1DBC3F8000D37A0F /* Main.storyboard */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F4E2801DBEDE2E004E2692 /* btn.wav in Resources */,
 				D87180031DBC3F8000D37A0F /* LaunchScreen.storyboard in Resources */,
 				D87180001DBC3F8000D37A0F /* Assets.xcassets in Resources */,
 				D8A15AB11DBD769E00E3E113 /* Minecrafter.Alt.ttf in Resources */,
