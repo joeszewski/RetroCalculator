@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -32,10 +32,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="oja-Mv-mop">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="329" id="aoX-B5-IXM"/>
-                                    <constraint firstAttribute="height" constant="367" id="cAo-u4-bvz"/>
+                                    <constraint firstAttribute="height" constant="375" id="cAo-u4-bvz"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q9o-jx-ta5">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="q9o-jx-ta5">
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ccp-XW-O1H">
                                         <subviews>
@@ -207,6 +207,19 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ceo-BO-mGR">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kE9-ge-ava">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="2ug-2D-ET8"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="clear"/>
+                                                <connections>
+                                                    <action selector="onClearPressedWithSendder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R8I-fY-jI8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="MkI-A2-FbP">
@@ -234,7 +247,7 @@
                             <constraint firstItem="q9o-jx-ta5" firstAttribute="centerY" secondItem="oja-Mv-mop" secondAttribute="centerY" id="CXZ-QY-jZw"/>
                             <constraint firstAttribute="trailing" secondItem="aLt-jN-SNh" secondAttribute="trailing" id="Hnr-zL-SBn"/>
                             <constraint firstItem="oja-Mv-mop" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="35" id="IQl-s8-EhU"/>
-                            <constraint firstItem="oja-Mv-mop" firstAttribute="top" secondItem="MkI-A2-FbP" secondAttribute="bottom" constant="15" id="KSC-Bs-h35"/>
+                            <constraint firstItem="oja-Mv-mop" firstAttribute="top" secondItem="MkI-A2-FbP" secondAttribute="bottom" constant="10" id="KSC-Bs-h35"/>
                             <constraint firstItem="sZ5-MP-CG0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="O5D-Mu-gzh"/>
                             <constraint firstItem="a1s-4w-Kxk" firstAttribute="leading" secondItem="MkI-A2-FbP" secondAttribute="leading" constant="15" id="dfs-7E-M8b"/>
                             <constraint firstItem="sZ5-MP-CG0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eNM-Ur-SnQ"/>
@@ -266,6 +279,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>

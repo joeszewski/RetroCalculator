@@ -29,7 +29,6 @@ class ViewController: UIViewController {
     var rightValStr = ""
     var result = ""
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -64,9 +63,27 @@ class ViewController: UIViewController {
         processOperation(operation: .Subtract)
     }
     @IBAction func onEqualPressed(sender: AnyObject){
+        //if the user hasn't selected a leftValStr prior to select an operator, assign 0 to the leftValStr
+        if leftValStr == ""{
+            leftValStr = "0"
+        }
+        
         processOperation(operation: currentOperation)
     }
     
+    @IBAction func onClearPressed(sendder: AnyObject){
+        clear()
+    }
+    
+    func clear(){
+        playSound()
+        outputLbl.text = "0"
+        currentOperation = Operation.Empty
+        runningNumber = ""
+        leftValStr = ""
+        rightValStr = ""
+        result = ""
+    }
     
     func playSound() {
         if btnSound.isPlaying{
@@ -96,7 +113,7 @@ class ViewController: UIViewController {
                 leftValStr = result
                 outputLbl.text = result
             }
-            
+    
             currentOperation = operation
         } else {
             //This is the first time an operator has been pressed
@@ -106,5 +123,3 @@ class ViewController: UIViewController {
         }
     }
 }
-
-
